@@ -10,7 +10,7 @@ This is only for testing manually.
 
 
 Sample out put:
-
+```text
 getClaimUser() - token: eyJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC9yb2xlIjpbIkludGVybmFsXC9zdWJzY3JpYmVyIiwiSW50ZXJuYWxcL2NyZWF0b3IiLCJBcHBsaWNhdGlvblwvYWRtaW5fRGVmYXVsdEFwcGxpY2F0aW9uX1BST0RVQ1RJT04iLCJJbnRlcm5hbFwvcHVibGlzaGVyIiwiSW50ZXJuYWxcL2V2ZXJ5b25lIiwiYWRtaW4iXSwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb250aWVyIjoiVW5saW1pdGVkIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC92ZXJzaW9uIjoiMS4wLjAiLCJpc3MiOiJ3c28yLm9yZ1wvcHJvZHVjdHNcL2FtIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25uYW1lIjoiRGVmYXVsdEFwcGxpY2F0aW9uIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvZW5kdXNlciI6ImFkbWluQGNhcmJvbi5zdXBlciIsImh0dHA6XC9cL3dzbzIub3JnXC9jbGFpbXNcL2VuZHVzZXJUZW5hbnRJZCI6Ii0xMjM0IiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25VVUlkIjoiODBiZjc3ZWQtZGJhYy00OTkyLTk3ODYtOGE4YjIwMzk2NDViIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvc3Vic2NyaWJlciI6ImFkbWluIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvdGllciI6IlVubGltaXRlZCIsImV4cCI6MTU5MTQyNjIyNSwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25pZCI6IjEiLCJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC91c2VydHlwZSI6IkFQUExJQ0FUSU9OIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBpY29udGV4dCI6IlwvaG1zXC8xLjAuMCJ9
 getClaimUser() - body value: {"http:\/\/wso2.org\/claims\/role":["Internal\/subscriber","Internal\/creator","Application\/admin_DefaultApplication_PRODUCTION","Internal\/publisher","Internal\/everyone","admin"],"http:\/\/wso2.org\/claims\/applicationtier":"Unlimited","http:\/\/wso2.org\/claims\/keytype":"PRODUCTION","http:\/\/wso2.org\/claims\/version":"1.0.0","iss":"wso2.org\/products\/am","http:\/\/wso2.org\/claims\/applicationname":"DefaultApplication","http:\/\/wso2.org\/claims\/enduser":"admin@carbon.super","http:\/\/wso2.org\/claims\/enduserTenantId":"-1234","http:\/\/wso2.org\/claims\/applicationUUId":"80bf77ed-dbac-4992-9786-8a8b2039645b","http:\/\/wso2.org\/claims\/subscriber":"admin","http:\/\/wso2.org\/claims\/tier":"Unlimited","exp":1591426225,"http:\/\/wso2.org\/claims\/applicationid":"1","http:\/\/wso2.org\/claims\/usertype":"APPLICATION","http:\/\/wso2.org\/claims\/apicontext":"\/hms\/1.0.0"}
 getClaimUser() - email: admin@carbon.super
@@ -68,5 +68,6 @@ verifySignature() - publicKey: Sun RSA public key, 2048 bits
 verifySignature() - algorithm: RSA
 verifySignature() - valid: true
 getNewClaimsUser() - claimUser: admin
+```
 
 
