@@ -4,8 +4,69 @@ This is used to verify the JWT is valid or not.
 
 Two inputs are needed to veirfy the JWT
 1. JWT token
-2. The .jks file that is used to generate the JWT.s
+2. The .jks file that is used to generate the JWT.
 
 This is only for testing manually.
+
+
+Sample out put:
+
+getClaimUser() - token: eyJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC9yb2xlIjpbIkludGVybmFsXC9zdWJzY3JpYmVyIiwiSW50ZXJuYWxcL2NyZWF0b3IiLCJBcHBsaWNhdGlvblwvYWRtaW5fRGVmYXVsdEFwcGxpY2F0aW9uX1BST0RVQ1RJT04iLCJJbnRlcm5hbFwvcHVibGlzaGVyIiwiSW50ZXJuYWxcL2V2ZXJ5b25lIiwiYWRtaW4iXSwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb250aWVyIjoiVW5saW1pdGVkIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC92ZXJzaW9uIjoiMS4wLjAiLCJpc3MiOiJ3c28yLm9yZ1wvcHJvZHVjdHNcL2FtIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25uYW1lIjoiRGVmYXVsdEFwcGxpY2F0aW9uIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvZW5kdXNlciI6ImFkbWluQGNhcmJvbi5zdXBlciIsImh0dHA6XC9cL3dzbzIub3JnXC9jbGFpbXNcL2VuZHVzZXJUZW5hbnRJZCI6Ii0xMjM0IiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25VVUlkIjoiODBiZjc3ZWQtZGJhYy00OTkyLTk3ODYtOGE4YjIwMzk2NDViIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvc3Vic2NyaWJlciI6ImFkbWluIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvdGllciI6IlVubGltaXRlZCIsImV4cCI6MTU5MTQyNjIyNSwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25pZCI6IjEiLCJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC91c2VydHlwZSI6IkFQUExJQ0FUSU9OIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBpY29udGV4dCI6IlwvaG1zXC8xLjAuMCJ9
+getClaimUser() - body value: {"http:\/\/wso2.org\/claims\/role":["Internal\/subscriber","Internal\/creator","Application\/admin_DefaultApplication_PRODUCTION","Internal\/publisher","Internal\/everyone","admin"],"http:\/\/wso2.org\/claims\/applicationtier":"Unlimited","http:\/\/wso2.org\/claims\/keytype":"PRODUCTION","http:\/\/wso2.org\/claims\/version":"1.0.0","iss":"wso2.org\/products\/am","http:\/\/wso2.org\/claims\/applicationname":"DefaultApplication","http:\/\/wso2.org\/claims\/enduser":"admin@carbon.super","http:\/\/wso2.org\/claims\/enduserTenantId":"-1234","http:\/\/wso2.org\/claims\/applicationUUId":"80bf77ed-dbac-4992-9786-8a8b2039645b","http:\/\/wso2.org\/claims\/subscriber":"admin","http:\/\/wso2.org\/claims\/tier":"Unlimited","exp":1591426225,"http:\/\/wso2.org\/claims\/applicationid":"1","http:\/\/wso2.org\/claims\/usertype":"APPLICATION","http:\/\/wso2.org\/claims\/apicontext":"\/hms\/1.0.0"}
+getClaimUser() - email: admin@carbon.super
+getClaimUser() - claimUser: admin
+getNewClaimsUser() - signedJWTAsString: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik5UQXhabU14TkRNeVpEZzNNVFUxWkdNME16RXpPREpoWldJNE5ETmxaRFUxT0dGa05qRmlNUSJ9.eyJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC9yb2xlIjpbIkludGVybmFsXC9zdWJzY3JpYmVyIiwiSW50ZXJuYWxcL2NyZWF0b3IiLCJBcHBsaWNhdGlvblwvYWRtaW5fRGVmYXVsdEFwcGxpY2F0aW9uX1BST0RVQ1RJT04iLCJJbnRlcm5hbFwvcHVibGlzaGVyIiwiSW50ZXJuYWxcL2V2ZXJ5b25lIiwiYWRtaW4iXSwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb250aWVyIjoiVW5saW1pdGVkIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC92ZXJzaW9uIjoiMS4wLjAiLCJpc3MiOiJ3c28yLm9yZ1wvcHJvZHVjdHNcL2FtIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25uYW1lIjoiRGVmYXVsdEFwcGxpY2F0aW9uIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvZW5kdXNlciI6ImFkbWluQGNhcmJvbi5zdXBlciIsImh0dHA6XC9cL3dzbzIub3JnXC9jbGFpbXNcL2VuZHVzZXJUZW5hbnRJZCI6Ii0xMjM0IiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25VVUlkIjoiODBiZjc3ZWQtZGJhYy00OTkyLTk3ODYtOGE4YjIwMzk2NDViIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvc3Vic2NyaWJlciI6ImFkbWluIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvdGllciI6IlVubGltaXRlZCIsImV4cCI6MTU5MTQyNjIyNSwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBwbGljYXRpb25pZCI6IjEiLCJodHRwOlwvXC93c28yLm9yZ1wvY2xhaW1zXC91c2VydHlwZSI6IkFQUExJQ0FUSU9OIiwiaHR0cDpcL1wvd3NvMi5vcmdcL2NsYWltc1wvYXBpY29udGV4dCI6IlwvaG1zXC8xLjAuMCJ9.OKzmgjvv1dYbpPk7a+6nVGPx2heolaSfKa1/wByhmNYdpbC7xnEpIviO+t0xrAGPuSPHv7FlEhOA7EQdYPTEio0tv402kWEd4gmVHJInJlrfQQA/e8JnVWhfk3dtYI9ZdySzO4ap09kBBUMSiQ665FheXgmBHBm7QjPAhGh5LIrIpZTKXoyYBvKnQ8n2cl0ZmKPZn8durnrmBobzvQ3hMFV+1gc41slXu3pM+wm3jAFbnifa82j/OZJWXH9Uaa5XJqh1v5Q80kMaxZN2ht3GVhkV0RZ347Dpwh3FR9U1704riPtsdVX7EYw5sClOxsEsw4EvSC6tsUqI9kKML5pBFA==
+verifySignature - header: {"x5t":"NTAxZmMxNDMyZDg3MTU1ZGM0MzEzODJhZWI4NDNlZDU1OGFkNjFiMQ","typ":"JWT","alg":"RS256"}
+verifySignature - algorithm: RS256
+verifySignature() - cert: [
+[
+  Version: V3
+  Subject: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 19049296766410219965113059550253073150157820443657864104004676207726193654461950115645745279320134751408624117470981180372194928225695953081013032599576993268550361790110613358270730467477076484222212606589554590173309384388977329346674298830195238331879794351264115399907472880236580933941802706762817712485341248880031821538970083369065737253391633147785048475653024194434652208057444151666400537584953268265192996642559133427898438556878384604452936792935532437313812326127264414343774887909483101263513387117201488508589569627005696586937864733503494525495180362440893689653813597370754173262818732992190707314633
+  public exponent: 65537
+  Validity: [From: Wed Jul 19 12:22:51 IST 2017,
+               To: Sat Jul 17 12:22:51 IST 2027]
+  Issuer: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US
+  SerialNumber: [    0282d0fd]
+
+Certificate Extensions: 1
+[1]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: B5 2F 24 21 8C 50 F1 45   6F 56 B6 52 76 0C A2 75  ./$!.P.EoV.Rv..u
+0010: EF 4E 1F 15                                        .N..
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 17 E4 E6 6A AC 55 4A E9   14 26 13 65 98 4E C5 34  ...j.UJ..&.e.N.4
+0010: 51 A4 65 EA A1 6D 46 D3   96 CE C4 7C 6C E3 63 DA  Q.e..mF.....l.c.
+0020: C7 0F 2B 00 9D 3A 3E DC   BD 8E A3 35 0A 04 4F A6  ..+..:>....5..O.
+0030: AB D9 6B 69 4F 40 14 2A   66 B1 E4 74 31 34 EA AE  ..kiO@.*f..t14..
+0040: 0D 1B 40 EA 30 7F 0D 4F   EB 4D 91 70 5E F5 84 EB  ..@.0..O.M.p^...
+0050: 7B 71 09 09 27 EC BE CC   2D 2D 50 D9 EC 60 EF 4C  .q..'...--P..`.L
+0060: 72 A8 8C 98 D0 BD D5 42   CD 18 FA 5C 7E 53 AE EC  r......B...\.S..
+0070: 1E 7D BE 01 27 3F 40 3E   D9 E5 C8 92 2F 8C 79 35  ....'?@>..../.y5
+0080: 85 DA 33 AB 23 A7 89 56   5D D1 03 B1 2C 06 DC 76  ..3.#..V]...,..v
+0090: DF 78 E9 C8 4D 75 0B C2   9B A6 94 3A 9B AD A7 C5  .x..Mu.....:....
+00A0: E8 82 BD 0A 06 71 32 DD   4F 1E B3 67 00 7C D6 5A  .....q2.O..g...Z
+00B0: 12 43 D4 F1 56 B9 6D 4E   97 8E 7C BC CC 64 27 5C  .C..V.mN.....d'\
+00C0: 25 F1 3C AA 7B B0 CA 60   3B DD E7 3C 1B 7F 96 25  %.<....`;..<...%
+00D0: F5 A9 FC 97 33 BC 44 A2   D5 A8 C6 69 BA 1D 9C 7C  ....3.D....i....
+00E0: A1 64 3C 53 96 A2 5E 36   79 44 A0 D6 08 2A B8 66  .d<S..^6yD...*.f
+00F0: E5 E5 EB 05 6C 53 3D 62   13 AD 6C B8 EE 72 5A 2F  ....lS=b..l..rZ/
+
+]
+verifySignature() - publicKey: Sun RSA public key, 2048 bits
+  modulus: 19049296766410219965113059550253073150157820443657864104004676207726193654461950115645745279320134751408624117470981180372194928225695953081013032599576993268550361790110613358270730467477076484222212606589554590173309384388977329346674298830195238331879794351264115399907472880236580933941802706762817712485341248880031821538970083369065737253391633147785048475653024194434652208057444151666400537584953268265192996642559133427898438556878384604452936792935532437313812326127264414343774887909483101263513387117201488508589569627005696586937864733503494525495180362440893689653813597370754173262818732992190707314633
+  public exponent: 65537
+verifySignature() - algorithm: RSA
+verifySignature() - valid: true
+getNewClaimsUser() - claimUser: admin
 
 
